@@ -1,4 +1,4 @@
-import { Router } from "express";
+import { Router, text } from "express";
 
 const messageRouter = Router()
 
@@ -11,6 +11,11 @@ const messages = [
   {
     text: "Hello World!",
     user: "Charles",
+    added: new Date()
+  }, 
+  {
+    text: "Great Message Board",
+    user: "Mohamed",
     added: new Date()
   }
 ];

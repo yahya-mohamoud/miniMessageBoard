@@ -11,17 +11,17 @@
 
     <div class="container">
         <button class="add" onclick="window.location.href='http://localhost:4000/new'">Add message</button>
-        <ul class="messageWrapper">
+        <div class="messageWrapper">
             <% for(let i = 0; i < messages.length; i++) { %>
-                <li>
+                
                     <div class="message">
                         <h2><%= messages[i].user%></h2>
                         <p><%= messages[i].text%></p>
                         <h5><i><%= messages[i].added%></i></h5>
                     </div>
-                </li>
+                
             <% } %>
-        </ul>
+        </div>
     </div>
 
 </body>
