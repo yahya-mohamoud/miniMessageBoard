@@ -10,7 +10,8 @@
    <%- include('navbar')%>
 
     <div class="container">
-        <button class="add" onclick="window.location.href='http:/new'">Add message</button>
+        <br>
+        <a class="add" href="/new">Add message</a> <br>
         <div class="messageWrapper">
             <% for(let i = 0; i < messages.length; i++) { %>
                 
@@ -25,10 +26,4 @@
     </div>
 
 </body>
-<script>
-    const btn = document.getElementsByClassName('add')
-    
-       
-    
-</script>
 </html>

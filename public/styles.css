@@ -12,17 +12,16 @@ body {
 }
 
 
-.add {
-    /* justify-self: flex-end; */
-    /* align-self: flex-end; */
-     width: 150px;
-    border: none;
+a {
+    width: 150px;
     padding: 9px;
     border-radius: 10px;
     color: #fff;
     background-color: #A9567C;
     font-size: 1rem;
-    margin: 10px;
+    margin: 20px;
+    text-decoration: none;
+
 }
 
 
@@ -61,17 +60,20 @@ nav h1 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    margin: 5px 10px;
+    margin: 30px 10px 5px;
 }
 
 
-
+.form-container {
+    /* display: flex;
+    justify-content: center; */
+}
 
 form {
-    margin: 20px;
+    margin: 20px 30px;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 80%;
     gap: 8px;
     border: 2px solid #6C7E93;
     padding: 20px;
@@ -92,9 +94,7 @@ input:focus{
     outline: none;
 }
 
-textarea {
-    max-width: 266px;
-}
+
 
 form button{
     width: 100px;
