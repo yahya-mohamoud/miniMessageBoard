@@ -11,8 +11,11 @@ body {
     color: white;
 }
 
+.container {
+    margin-top: 20px;
+}
 
-a {
+a.add {
     width: 150px;
     padding: 9px;
     border-radius: 10px;
@@ -32,28 +35,40 @@ nav h1 {
     box-shadow: 2px 2px 6px 0px white;
 }
 
-.message {
-    margin: 0px auto;
+a.btn {
     padding: 20px 10px 30px;
-    /* background-color: #415658; */
-    max-width: 400px;
+    max-width: 300px;
     min-height: 160px;
     border-radius: 8px;
-
-    
+    text-decoration: none;
+    color: inherit;
 }
 
-.messageWrapper > div:nth-child(even) {
+.messageWrapper > a:nth-child(even) {
     background-color: #649B69;
 }
-.messageWrapper > div:nth-child(odd) {
+.messageWrapper > a:nth-child(odd) {
     background-color: #415658;
 }
 
-.message:hover {
+a.btn:hover {
     transform: translateY(-2.9px);
     box-shadow: 1px 2px 4px 0px #6C7E93;
     transition: linear 1s ease-in-out;
+}
+
+.detail {
+    background-color: #649B69;
+    padding: 20px 10px 30px;
+    /* width: 300px; */
+    min-height: 160px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.detail p {
+    margin-top: 10px;
 }
 
 .messageWrapper {
@@ -61,12 +76,6 @@ nav h1 {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
     margin: 30px 10px 5px;
-}
-
-
-.form-container {
-    /* display: flex;
-    justify-content: center; */
 }
 
 form {
@@ -112,4 +121,15 @@ button:hover {
     box-shadow: 1px 2px 6px 0px whiteSmoke;
     transform: translate(-.51px, -.71px);
     transition:cubic-bezier(0.47, 0, 0.745, 0.715) 4s ease-in-out  ;
+}
+
+.error {
+    text-align: center;
+    margin: 40px;
+}
+
+a.error {
+    margin: 10px auto;
+    display: block;
+    background-color: rgb(255, 37, 37);
 }

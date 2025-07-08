@@ -1,4 +1,4 @@
-import { Router, text } from "express";
+import { Router } from "express";
 
 const messageRouter = Router()
 
@@ -38,4 +38,4 @@ messageRouter.post('/new', (req, res) => {
     res.redirect('/')
 })
 
-export default messageRouter;
+export {messageRouter, messages};
