@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #3E4046;
+
+    color: white;
+}
+
+
+.add {
+    /* justify-self: flex-end; */
+    /* align-self: flex-end; */
+     width: 150px;
+    border: none;
+    padding: 9px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1482EB;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+
+nav h1 {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 10px 10px 20px;
+    box-shadow: 2px 2px 6px 0px white;
+}
+
+.message {
+    /* margin: 20px auto; */
+    padding: 20px 10px 30px;
+    /* background-color: #415658; */
+    max-width: 400px;
+    min-height: 160px;
+    border-radius: 8px;
+    
+}
+
+.messageWrapper > li:nth-child(even) {
+    background-color: #649B69;
+}
+.messageWrapper > li:nth-child(odd) {
+    background-color: #415658;
+}
+
+.message:hover {
+    transform: translateY(-2.9px);
+    box-shadow: 1px 2px 4px 0px #6C7E93;
+    transition: linear 1s ease-in-out;
+}
+
+.messageWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin: 5px 10px;
+}
+
+li {
+    list-style: none;
+}
+
+
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 8px;
+    border: 2px solid #6C7E93;
+    padding: 20px;
+    background-color: #415658;
+    font-size: 1rem;
+    margin: 40px auto;
+}
+
+input, textarea {
+    padding: 4px;
+    outline: none;
+    border-radius: 3px;
+    /* border: none; */
+}
+
+input:focus{
+    border-color: #1482EB;
+    outline: none;
+}
+
+textarea {
+    max-width: 266px;
+}
+
+form button{
+    width: 100px;
+    border: none;
+    padding: 7px;
+    margin: auto;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #1482EB;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #156CEA;
+    box-shadow: 1px 2px 6px 0px whiteSmoke;
+    transform: translate(-3px, -2px);
+    transition:cubic-bezier(0.47, 0, 0.745, 0.715) 4s ease-in-out  ;
+}
