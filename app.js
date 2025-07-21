@@ -24,7 +24,7 @@ app.use((err, req, res, next) => {
     res.status(500).render('404', {title: "Page not found"});
 }) 
 
-const PORT = process.env.PORT || 4000;
+const PORT = process.env.PORT ;
 
 app.listen(PORT, () => {
     console.log(`Server Started On PORT: ${PORT}`);

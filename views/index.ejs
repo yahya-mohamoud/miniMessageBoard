@@ -13,14 +13,14 @@
         <br>
         <a class="add" href="/new">Add message</a> <br>
         <div class="messageWrapper">
-            <% for(let i = 0; i < messages.length; i++) { %>
-                    <a class="btn" href="/messages/<%= i %>">
+            <% messages.map((message) => { %>
+                    <a class="btn" href="/messages/<%= message.id %>">
                     <div class="message">
-                        <h2><%= messages[i].username %></h2>
-                        <p><%= messages[i].text %></p>
+                        <h2><%= message.username %></h2>
+                        <p><%= message.text %></p>
                     </div>
                 </a>
-            <% } %>
+            <% }) %>
         </div>
     </div>
 
